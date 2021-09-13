@@ -1,0 +1,131 @@
+.form-control-wrap {
+  @extend .anim-click;
+  display: flex;
+  position: relative;
+}
+.form-control-wrap.error {
+  .right-action {
+    span {
+      color: $red;
+    }
+    &:hover {
+      span {
+        color: $red;
+      }
+    }
+  }
+}
+
+.right-action {
+  cursor: pointer;
+}
+
+// Sizes
+.form-control-lg {
+  height: 48px;
+  padding: 12px 50px 12px 20px;
+  @extend .par-1;
+
+  & + .right-action {
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    right: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-size: 22px;
+      color: $label-3;
+    }
+
+    &:hover {
+      span {
+        color: $label-2;
+      }
+    }
+  }
+
+  &::placeholder {
+    color: $label-3;
+  }
+}
+
+.form-control-md {
+  height: 40px;
+  padding: 8px 44px 8px 16px;
+  @extend .par-2;
+
+  & + .right-action {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-size: 20px;
+      color: $label-3;
+    }
+
+    &:hover {
+      span {
+        color: $label-2;
+      }
+    }
+  }
+
+  &::placeholder {
+    color: $label-3;
+  }
+}
+
+// Form Controls
+.form-control {
+  border: 1px solid $bg-gray-6 !important;
+  background: $bg-gray-5;
+  color: $label-1 !important;
+  border-radius: 10px;
+  transition: 0.2s;
+  border-right-color: transparent;
+
+  &:hover {
+    background: $bg-gray-4;
+  }
+
+  &:focus {
+    background: $bg-gray-2;
+  }
+
+  &:active {
+    background: $bg-gray-2;
+  }
+
+  &.disabled {
+    background: $bg-gray-6;
+    color: $label-3;
+  }
+
+  &:active, &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+// Variants
+.form-control.outlined {
+  background: $bg-gray-7;
+  border: 1px solid $bg-gray-4 !important;
+
+  &:hover, &:focus, &:active {
+    background: $bg-gray-6;
+  }
+
+  &.disabled {
+    background: $bg-primary;
+    color: $label-3;
+  }
+}

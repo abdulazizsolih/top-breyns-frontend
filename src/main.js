@@ -6,6 +6,12 @@ import store from './store';
 import components from "./components/components";
 import '@/assets/scss/app.scss';
 
+// App scss and bootstrap connecting
+import '@/assets/scss/app.scss'
+// Fonts connecting
+import '@/assets/fonts/fonts.scss'
+// Connecting jquery globally
+
 const app = createApp(App)
 const head = createHead()
 

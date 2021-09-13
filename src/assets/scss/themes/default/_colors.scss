@@ -1,0 +1,67 @@
+// Solid Colors
+$accent: #F8A404;
+$red: #E43E34;
+
+// Background Colors
+$bg-primary: #080808;
+$bg-secondary: #1B1B1B;
+$bg-tertiary: #121212;
+// ----
+$bg-gray-7: rgba(#fff, 0.01);
+$bg-gray-6: rgba(#fff, 0.04);
+$bg-gray-5: rgba(#fff, 0.08);
+$bg-gray-4: rgba(#fff, 0.12);
+$bg-gray-3: rgba(#fff, 0.1);
+$bg-gray-2: rgba(#fff, 0.16);
+$bg-gray-1: rgba(#fff, 0.2);
+
+// Label Colors
+$label-1: rgba(#fff, 0.9);
+$label-2: rgba(#fff, 0.4);
+$label-3: rgba(#fff, 0.3);
+$label-4: rgba(#fff, 0.2);
+
+.label-1 {
+  color: $label-1;
+  a {
+    color: $label-1;
+
+    &:hover {
+      color: $label-1;
+      box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.08);
+    }
+  }
+}
+.label-2 {
+  color: $label-2;
+    a {
+    color: $label-2;
+
+    &:hover {
+      color: $label-2;
+      box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.08);
+    }
+  }
+}
+.label-3 {
+  color: $label-3;
+    a {
+    color: $label-3;
+
+    &:hover {
+      color: $label-3;
+      box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.08);
+    }
+  }
+}
+.label-4 {
+  color: $label-4;
+  a {
+    color: $label-4;
+
+    &:hover {
+      color: $label-4;
+      box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.08);
+    }
+  }
+}

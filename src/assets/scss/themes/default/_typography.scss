@@ -1,0 +1,139 @@
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+.italic {
+  font-style: italic;
+}
+.regular {
+  font-weight: 350;
+}
+.medium {
+  font-weight: 450;
+}
+.semibold {
+  font-weight: 500;
+}
+.bold {
+  font-weight: 550;
+}
+
+h1, .h1 {
+  @extend .bold;
+  @include typoStyle(72, 72, -1.5);
+  color: $label-1;
+}
+h2, .h2 {
+  @include typoStyle(56, 56, -0.5);
+  color: $label-1;
+}
+h3, .h3 {
+  @include typoStyle(48, 48, 0);
+  color: $label-1;
+}
+h4, .h4 {
+  @include typoStyle(32, 36, 0.25);
+  color: $label-1;
+}
+h5, .h5 {
+  @include typoStyle(24, 32, 0);
+  color: $label-1;
+}
+h6, .h6 {
+  @include typoStyle(20, 28, 0);
+  color: $label-1;
+}
+.h7 {
+  @include typoStyle(16, 16, 0.15);
+  color: $label-1;
+}
+.par-1 {
+  @include typoStyle(18, 24, 0);
+  color: $label-1;
+}
+p, .par-2 {
+  @include typoStyle(16, 22, 0);
+  color: $label-1;
+}
+.subheadline {
+  @include typoStyle(15, 20, 0.1);
+}
+.caption {
+  @include typoStyle(13, 16, 0.4);
+}
+.caps {
+  @include typoStyle(11, 16, 1);
+  text-transform: uppercase;
+}
+.btn-text-lg {
+  @include typoStyle(18, 24, 0);
+}
+.btn-text-md {
+  @include typoStyle(16, 24, 0);
+}
+.btn-text-sm {
+  @include typoStyle(15, 20, 0);
+}
+
+@media (max-width: 992px) {
+  h1, .h1 {
+    @include typoStyle(64, 64, -1.5);
+  }
+}
+
+@media (max-width: 768px) {
+  h1, .h1 {
+    @include typoStyle(52, 52, -1.5);
+  }
+  h2, .h2 {
+    @include typoStyle(48, 48, -0.5);
+    color: $label-1;
+  }
+  h3, .h3 {
+    @include typoStyle(40, 40, 0);
+    color: $label-1;
+  }
+  h4, .h4 {
+    @include typoStyle(28, 32, 0.25);
+    color: $label-1;
+  }
+  h5, .h5 {
+    @include typoStyle(24, 24, 0);
+    color: $label-1;
+  }
+  h6, .h6 {
+    @include typoStyle(18, 24, 0);
+    color: $label-1;
+  }
+  .h7 {
+    @include typoStyle(16, 16, 0.15);
+    color: $label-1;
+  }
+}
+
+@media (max-width: 576px) {
+  h1, .h1 {
+    @include typoStyle(48, 48, -1.5);
+  }
+  h2, .h2 {
+    @include typoStyle(40, 40, -0.5);
+  }
+  h3, .h3 {
+    @include typoStyle(32, 36, 0);
+  }
+  h4, .h4 {
+    @include typoStyle(24, 28, 0.25);
+  }
+  h5, .h5 {
+    @include typoStyle(20, 24, 0);
+  }
+  h6, .h6 {
+    @include typoStyle(18, 24, 0);
+  }
+  .h7 {
+    @include typoStyle(16, 20, 0.15);
+  }
+  p, .par-1, .par-2 {
+    @include typoStyle(16, 22, 0);
+  }
+}

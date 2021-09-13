@@ -1,8 +1,6 @@
 <template>
+  <navbar-default></navbar-default>
   <router-view/>
-  <div class="container">
-    123
-  </div>
 </template>
 
 <script>
@@ -13,5 +11,8 @@
 * {
   margin: 0;
   padding: 0;
+}
+body, html {
+  background-color: $bg-primary !important;
 }
 </style>
