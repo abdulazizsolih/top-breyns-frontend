@@ -51,14 +51,7 @@
         <div class="col-xxl-3 col-xl-4 col-lg-4">
           <div class="footer-group">
             <p class="label-2 title">Создать аккаунт</p>
-            <form id="form-1" class="full-width-form">
-              <div class="form-group">
-                <v-input type="phone" size="lg" placeholder="+998 (__) ___ __ __"></v-input>
-                <v-button size="lg" variant="primary">Присоединиться</v-button>
-              </div>
-              <p class="caption text-center label-3 regular">Предоставляя свой телефон, вы соглашаетесь
-                с нашими <a href="">Условиями использования</a> и <a href="">Политикой конфиденциальности</a>.</p>
-            </form>
+            <v-form-sm id="form-2"></v-form-sm>
           </div>
         </div>
       </div>

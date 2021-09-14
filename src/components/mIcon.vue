@@ -1,5 +1,5 @@
 <template>
-  <span class="material-icons" :style="{fontSize: size + 'px', userSelect: 'none'}"><slot></slot></span>
+  <span class="material-icons-round" :style="{fontSize: size + 'px', userSelect: 'none'}"><slot></slot></span>
 </template>
 
 <script>

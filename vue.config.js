@@ -1,5 +1,5 @@
 module.exports = {
-    //...
+    publicPath: '/top-breyns-frontend/',
     css: {
         loaderOptions: {
             sass: {

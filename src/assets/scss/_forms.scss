@@ -129,3 +129,20 @@
     color: $label-3;
   }
 }
+
+// Block Forms
+.form-group {
+  > * {
+    margin-bottom: 16px;
+  }
+}
+.full-width-form {
+  .form-group > * {
+    display: block;
+    width: 100%;
+  }
+
+  .caption {
+    margin-top: 24px;
+  }
+}
